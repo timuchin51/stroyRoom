@@ -1,0 +1,39 @@
+# source files
+#src/
+
+# gulp files
+gulpfile.js/
+
+# IDE files
+.idea/
+
+# Node.js files
+*.log*
+node_modules/
+reports/
+
+# Assembled project files
+# build/
+
+# Environment variables files
+.env
+.env.test
+.venv
+
+# pipenv files
+Pipfile*
+
+# Sass  Scss files
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Optional npm cache directory and package files
+package*
+.npm
+
+# Optional eslint cache and linters config
+.stylelintrc.json
+.eslintcache
+.eslintrc.json
