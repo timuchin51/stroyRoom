@@ -1,17 +1,14 @@
+block variables
+
 doctype html
 html(lang="ru")
     block head
-        head
-            meta(charset="utf-8")
-            title title
-            meta(content="width=device-width, initial-scale=1" name="viewport")
-            meta(content="ie=edge" http-equiv="x-ua-compatible")
-            link(rel="stylesheet" href="css/main.min.css")
+        include head
     body
         block header
             include header
         block content
         block footer
             include footer
-        block scripts
-            script(src='js/main.min.js')
+        block script
+            include script

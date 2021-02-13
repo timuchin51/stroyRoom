@@ -1,2 +1,53 @@
 block header
-    h2 header
+
+header.header
+    .header_top
+        .container
+            span Welcome to out store
+            nav
+                ul
+                    li
+                        a(href='#') Compare (0)
+                    li
+                        a(href='#') Settings
+    .header_middle
+        .container
+            .logo
+                a(href='index.html')
+                    img(src='../images/logo/logo.png' alt='logo')
+            .main-menu
+                .menu-items
+                    nav
+                        ul
+                            li
+                                a(href='index.html') Home
+                                a(href='#') Shop
+                                a(href='#') Pages
+                                a(href='#') About us
+                                a(href='#') Contact us
+                .phone-support
+                    .support_icon
+                        img(src='../images/icon/icon_phone.png' alt='phone')
+                        .support_text
+                            p
+                                span Customer Support
+                                a(href='tel:+71234567890') +7(123)456-78-90
+    .header_bottom
+        .container
+            .categories-menu
+                .categories_title
+                    h2 All Categories
+        .search-container
+            form
+                .search_box
+                    input(type='text' placeholder='Search entire store here...')
+                    button(type='submit')
+        .cart-wishlist
+            .wishlist_btn
+                a(href='#')
+                    i.icon-heart
+                span.wishlist_quantity 3
+            .mini-cart
+                a(href='#')
+                    span.icon-cart $67.00
+                span.cart_quantity
