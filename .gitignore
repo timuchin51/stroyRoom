@@ -2,7 +2,7 @@
 #src/
 
 # gulp files
-gulpfile.js/
+#gulpfile.js/
 
 # IDE files
 .idea/
@@ -34,6 +34,6 @@ package*
 .npm
 
 # Optional eslint cache and linters config
-.stylelintrc.json
+#.stylelintrc.json
 .eslintcache
-.eslintrc.json
+#.eslintrc.json

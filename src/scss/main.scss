@@ -1,5 +1,23 @@
 @import "./node_modules/normalize.css/normalize";
 
-body {
-    background: yellow;
-}
+@import "helpers/variables";
+
+@import "helpers/mixins";
+
+@import "base/normalize";
+
+@import "base/typography";
+
+@import "base/common";
+
+@import "layout/slider";
+
+@import "layout/banner";
+
+@import "layout/brand";
+
+@import "layout/categories";
+
+@import "layout/featured";
+
+@import "layout/product";
