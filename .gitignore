@@ -30,7 +30,7 @@ Pipfile*
 *.scss.map
 
 # Optional npm cache directory and package files
-package*
+#package*
 .npm
 
 # Optional eslint cache and linters config

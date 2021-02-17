@@ -4,8 +4,8 @@ section.featured_product_area
     .container
         .section_title
             h2 Featured products
-        .product_container
-            +featured_product_item('../images/product/product1.jpg', '../images/product/product2.jpg')
-            +featured_product_item('../images/product/product3.jpg', '../images/product/product4.jpg')
-            +featured_product_item('../images/product/product5.jpg', '../images/product/product6.jpg')
-            +featured_product_item('../images/product/product7.jpg', '../images/product/product8.jpg')
+        .product_container.owl-3.owl-carousel
+            +featured_product_item('./images/product/product1.jpg', './images/product/product2.jpg')
+            +featured_product_item('./images/product/product3.jpg', './images/product/product4.jpg')
+            +featured_product_item('./images/product/product5.jpg', './images/product/product6.jpg')
+            +featured_product_item('./images/product/product7.jpg', './images/product/product8.jpg')

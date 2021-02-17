@@ -1,0 +1,80 @@
+@import "../helpers/variables";
+
+
+.error_section {
+  padding-bottom: 70px;
+  padding-top: 61px;
+}
+.error_form {
+  text-align: center;
+  margin: 0 auto;
+  & h1 {
+    font-size: 200px;
+    font-weight: 700;
+    color: $primary_color;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin: 0 0 18px;
+  }
+  & h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 19px;
+  }
+  & p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  & form {
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+    & input {
+      padding: 0 60px 0 30px;
+      background: $background_color;
+      border: 1px solid $border_color_light;
+      color: $primary_fonts_color;
+      height: 40px;
+      width: 100%;
+      border-radius: 3px;
+    }
+    & button {
+      position: absolute;
+      padding: 0 15px;
+      font-weight: 600;
+      right: 0;
+      top: 0;
+      height: 100%;
+      border: none;
+      background: none;
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        color: $primary_color;
+      }
+
+    }
+  }
+  & a {
+    color: $background_color;
+    display: inline-block;
+    background: $primary_fonts_color;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 42px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    border-radius: 3px;
+    &:hover {
+      background: $primary_color;
+    }
+  }
+}

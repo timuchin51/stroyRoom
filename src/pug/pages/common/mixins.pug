@@ -4,36 +4,38 @@ mixin brand_item(url)
             img(src=url alt='brand')
 
 mixin single_banner(url)
-    div.banner_item
-        a(href='#')
+    .single_banner
+        .banner_item
+            a(href='#')
             img(src=url alt='tools')
 
 mixin product_area_item(primary_url, secondary_url)
-    .product_thumb
-        a.primary_img(href='#')
-            img(src=primary_url alt='')
-        a.secondary_img(href='#')
-            img(src=secondary_url alt='')
-        .product_label
-            span.label_sale -8%
-        .action_links
-            ul
-                li.wishlist
-                    a(href='wishlist.html' title='add to wishlist')
-                        ion-icon(name='heart-outline')
-                li.compare
-                    a(href='compare.html' title='compare')
-                        ion-icon(name='repeat-outline')
-        .add_to_cart
-            a(href='cart.html' title='add to cart') Add to cart
-    .product_content
-        p.manufacture_content
-            a(href='#') Product name
-        h4
-            a(href='product-details.html') Product details
-        .price_box
-            span.old_price $10.00
-            span.current_price $9.00
+    .product_item
+        .product_thumb
+            a.primary_img(href='#')
+                img(src=primary_url alt='')
+            a.secondary_img(href='#')
+                img(src=secondary_url alt='')
+            .product_label
+                span.label_sale -8%
+            .action_links
+                ul
+                    li.wishlist
+                        a(href='wishlist.html' title='add to wishlist')
+                            ion-icon(name='heart-outline')
+                    li.compare
+                        a(href='compare.html' title='compare')
+                            ion-icon(name='repeat-outline')
+            .add_to_cart
+                a(href='cart.html' title='add to cart') Add to cart
+        .product_content
+            p.manufacture_content
+                a(href='#') Product name
+            h4
+                a(href='product-details.html') Product details
+            .price_box
+                span.old_price $10.00
+                span.current_price $9.00
 
 mixin categories_product_item(first_url, second_url)
     .product_item

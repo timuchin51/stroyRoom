@@ -1,0 +1,27 @@
+// Font Family
+$open-sans: "Open Sans", sans-serif;
+$overpass: "Overpass", sans-serif;
+
+// Colors
+$background_color: #ffffff;
+$primary_fonts_color: #333333;
+$product_content_fonts_color: #0062bd;
+$primary_color: #fdb813;
+$facebook: #3b579d;
+$twitter: #1da1f2;
+$instagram: #a0369c;
+$youtube: #c33c33;
+$google: #d32a2a;
+$current_price_color: #f30f30;
+$border_color_light: #ededed;
+$border_color_dark: rgba(0,0,0,0.1);
+$form_button_color: #333333;
+$form_input_color: #666666;
+
+// Responsive Variables
+$extraBig-device : "only screen and (min-width: 1600px)";
+$laptop-device : "only screen and (min-width: 1200px) and (max-width: 1600px)";
+$desktop-device : "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 479px)";

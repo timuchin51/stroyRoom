@@ -1,9 +1,9 @@
-block header
 
 header.header
     .header_top
         .container
-            span Welcome to out store
+            .welcome
+                p Welcome to out store
             nav
                 ul
                     li
@@ -14,40 +14,44 @@ header.header
         .container
             .logo
                 a(href='index.html')
-                    img(src='../images/logo/logo.png' alt='logo')
+                    img(src='./images/logo/logo.png' alt='logo')
             .main-menu
                 .menu-items
                     nav
                         ul
                             li
                                 a(href='index.html') Home
+                            li
                                 a(href='#') Shop
+                            li
                                 a(href='#') Pages
+                            li
                                 a(href='#') About us
+                            li
                                 a(href='#') Contact us
                 .phone-support
                     .support_icon
-                        img(src='../images/icon/icon_phone.png' alt='phone')
-                        .support_text
-                            p
-                                span Customer Support
-                                a(href='tel:+71234567890') +7(123)456-78-90
+                        img(src='./images/icon/icon_phone.png' alt='phone')
+                    .support_text
+                        p
+                            span Customer Support
+                            a(href='tel:+71234567890') +712345678
     .header_bottom
         .container
-            .categories-menu
+            .categories_menu
                 .categories_title
                     h2 All Categories
-        .search-container
-            form
-                .search_box
-                    input(type='text' placeholder='Search entire store here...')
-                    button(type='submit')
-        .cart-wishlist
-            .wishlist_btn
-                a(href='#')
-                    i.icon-heart
-                span.wishlist_quantity 3
-            .mini-cart
-                a(href='#')
-                    span.icon-cart $67.00
-                span.cart_quantity
+            .search_container
+                form
+                    .search_box
+                        input(type='text' placeholder='Search entire store here...')
+                        button(type='submit')
+            .cart_wishlist
+                .wishlist_btn
+                    a(href='#')
+                        i.icon-heart
+                    span.wishlist_quantity 3
+                .mini_cart
+                    a(href='#')
+                        span.icon-cart $67.00
+                    span.cart_quantity 2

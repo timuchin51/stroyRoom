@@ -1,0 +1,60 @@
+@import "../helpers/variables";
+
+.brand_list .container {
+  padding: 37px 0;
+  background: $background_color;
+  &:hover {
+    & .owl-nav {
+      & > button {
+        opacity: 1;
+        visibility: visible;
+        }
+      }
+    }
+  & .owl-nav {
+    @media #{$large-mobile} {
+      display: none;
+    }
+    font-size: 56px;
+    & > button {
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: .3s;
+      opacity: 0;
+      visibility: hidden;
+      @media #{$desktop-device} {
+        left: 0;
+      }
+      @media #{$tablet-device} {
+        left: 0;
+      }
+      &:hover {
+        color: $primary_color;
+      }
+    }
+    & .owl-next {
+      right: -30px;
+      left: auto;
+      @media #{$desktop-device} {
+        right: 0;
+      }
+      @media #{$tablet-device} {
+        right: 0;
+      }
+    }
+  }
+  & .brand_item {
+    & img {
+      width: inherit;
+      margin: 0 auto;
+      opacity: 0.5;
+      transition: 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+  }
+}

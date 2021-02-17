@@ -1,0 +1,63 @@
+@import "../helpers/variables";
+
+.shipping_area {
+  & .container {
+    justify-content: space-between;
+    border-bottom: 1px solid $border_color_dark;
+    padding: 60px 0;
+    @media #{$tablet-device} {
+      padding: 60px 0 35px;
+    }
+    @media #{$large-mobile} {
+      padding: 60px 0 35px;
+      flex-flow: column;
+    }
+    & .shipping_item {
+      border-right: 1px solid $border_color_light;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      &:last-child {
+        border-right: none;
+      }
+      &:hover {
+        & .shipping_icon {
+          background: $primary_color;
+          border-color: $primary_color;
+          & i {
+            color: $primary_fonts_color;
+          }
+        }
+      }
+      & .shipping_icon {
+        height: 50px;
+        width: 50px;
+        line-height: 48px;
+        border: 1px solid $border_color_light;
+        border-radius: 100%;
+        text-align: center;
+        transition: .3s;
+        margin-right: 11px;
+        & i {
+          font-size: 20px;
+          line-height: 48px;
+          display: block;
+          transition: .3s;
+          color: $primary_color;
+        }
+
+      }
+      & .shipping_content {
+        & h3 {
+          font-size: 14px;
+          line-height: 20px;
+          text-transform: capitalize;
+          font-weight: 700;
+          margin-bottom: 4px;
+          font-family: $open-sans;
+
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@import "base/fonts";
+
 @import "./node_modules/normalize.css/normalize";
 
 @import "helpers/variables";
@@ -21,3 +23,11 @@
 @import "layout/featured";
 
 @import "layout/product";
+
+@import "layout/shipping";
+
+@import "layout/footer";
+
+@import "layout/header";
+
+@import "layout/404";

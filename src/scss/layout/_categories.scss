@@ -1,0 +1,117 @@
+@import "../helpers/variables";
+
+.categories_product_area .container {
+  display: block;
+  margin-bottom: 60px;
+  & .section_title {
+    padding: 0 15px;
+    margin-bottom: 20px;
+    & h2 {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 0;
+      text-transform: capitalize;
+      font-family: $overpass;
+    }
+  }
+  & .product_container {
+    padding: 0 15px;
+    &:hover {
+      & .owl-nav {
+        & > button {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    & .owl-nav {
+      & > button {
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 42px;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+        &:hover {
+          color: $primary_color;
+        }
+        @media #{$desktop-device} {
+          left: 0;
+        }
+        @media #{$tablet-device} {
+          left: 0;
+        }
+        &.owl-next {
+          right: -30px;
+          left: auto;
+          @media #{$desktop-device} {
+            right: 0;
+          }
+          @media #{$tablet-device} {
+            right: 0;
+          }
+        }
+      }
+    }
+    & .single_product {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      padding: 30px 15px;
+      border: 1px solid $border_color_light;
+      border-radius: 3px;
+      transition: .3s;
+      &:hover {
+        border-color: $primary_color;
+      }
+    }
+    & .product_content {
+      width: 60%;
+      padding: 0 0 0 40px;
+      & h4 {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: $primary_fonts_color;
+        display: block;
+        margin-bottom: 11px;
+        font-family: $open-sans;
+      }
+      & ul {
+        & li {
+          & a {
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: capitalize;
+            font-weight: 400;
+            &:hover {
+              color: $primary_color;
+            }
+          }
+        }
+      }
+      & > a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $primary_color;
+        &:hover {
+          color: $primary_fonts_color;
+        }
+      }
+    }
+    & .product_thumb {
+      width: 40%;
+      text-align: center;
+      margin: 0 auto;
+      & img {
+        width: inherit;
+      }
+    }
+  }
+}
