@@ -1,0 +1,32 @@
+section.login
+    .container
+        .account_form.login
+            h2 login
+            form(action='#')
+                p
+                    label Username or email
+                        span *
+                    input(type='text')
+                p
+                    label Passwords
+                        span *
+                    input(type='password')
+                .login_submit
+                    a(href='#') Lost your passwords?
+                    label(for='remember')
+                        input(id='remember' type='checkbox')
+                        | Remember me
+                    button(type='submit') login
+        .account_form.register
+            h2 Register
+            form(action='#')
+                p
+                    label Email address
+                        span *
+                    input(type='text')
+                p
+                    label Password
+                        span *
+                    input(type='password')
+                .login_submit
+                    button(type='submit') Register

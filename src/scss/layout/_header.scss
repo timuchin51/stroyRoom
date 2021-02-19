@@ -379,3 +379,36 @@
   }
 
 }
+
+.breadcrumb_content{
+  padding: 22px 0;
+  & ul{
+    & li{
+      display: inline-block;
+      text-transform: capitalize;
+      font-size: 14px;
+      margin-right: 3px;
+      padding-right: 13px;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "/";
+        right: 0;
+        top: 50%;
+        transform: translatey(-50%);
+      }
+      &:last-child{
+        margin-right: 0;
+        &::before{
+          display: none;
+        }
+      }
+      & a{
+        color: $form_input_color;
+        &:hover{
+          color:  $primary_color;
+        }
+      }
+    }
+  }
+}

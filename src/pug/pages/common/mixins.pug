@@ -105,3 +105,40 @@ mixin shipping_area_item(icon_class, item_text)
             i(class=icon_class)
         .shipping_content
             h3=item_text
+
+
+//- пример +breadcrumbs(['index.html', 'home'], ['catalog.html', 'catalog'], ['login'])
+//- на выходе имеем вид: Home/Catalog/Login
+
+mixin breadcrumbs(...items)
+    .breadcrumb
+        .container
+            .breadcrumb_content
+                ul
+                    each item in items
+                        if item[1]
+                            li
+                                a(href=item[0])=item[1]
+                        else
+                            li=item[0]
+
+mixin shop_checkbox(title, ...text_items)
+    h2=title
+    ul
+        each text in text_items
+            li
+                input(type='checkbox')
+                a(href='#')=text
+                span.checkmark
+
+mixin pagination
+    ul
+        li.current 1
+        li
+            a(href='#') 2
+        li
+            a(href='#') 3
+        li.next
+            a(href='#') next
+        li
+            a(href='#') >>
