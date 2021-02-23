@@ -175,14 +175,9 @@
             <h1>shop</h1>
           </div>
           <div class="shop_toolbar_wrapper">
-            <div class="shop_toolbar_btn">
-              <button class="active btn-grid-3" data-role="grid_3" type="button" data-toggle="tooltip" title="3"></button>
-              <button class="btn-grid-4" data-role="grid_4" type="button" data-toggle="tooltip" title="4"></button>
-              <button class="btn-list" data-role="grid_list" type="button" data-toggle="tooltip" title="List"></button>
-            </div>
-            <div class="niceselect_option">
+            <div class="nice_select_option">
               <form class="select_option" action="#">
-                <select name="orderby" id="short">
+                <select name="order_by" id="short">
                   <option selected value="1">Sort by average rating</option>
                   <option value="2">Sort by popularity</option>
                   <option value="3">Sort by newness</option>
@@ -426,14 +421,16 @@
                   </div>
                 </div>
           </div>
-          <div class="shop_toolbar t_bottom">
-                <ul>
-                  <li class="current">1</li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li class="next"><a href="#">next</a></li>
-                  <li><a href="#">>></a></li>
-                </ul>
+          <div class="shop_toolbar pagination">
+                <div class="pagination">
+                  <ul>
+                    <li class="current">1</li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li class="next"><a href="#">next</a></li>
+                    <li><a href="#">>></a></li>
+                  </ul>
+                </div>
           </div>
         </section>
       </div>

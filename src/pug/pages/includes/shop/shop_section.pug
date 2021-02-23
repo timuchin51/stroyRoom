@@ -36,13 +36,9 @@ include ../../common/mixins
             .shop_title
                 h1 shop
             .shop_toolbar_wrapper
-                .shop_toolbar_btn
-                    button(data-role='grid_3' type='button' class='active btn-grid-3' data-toggle='tooltip' title='3')
-                    button(data-role='grid_4' type='button' class='btn-grid-4' data-toggle='tooltip' title='4')
-                    button(data-role='grid_list' type='button' class='btn-list' data-toggle='tooltip' title='List')
-                .niceselect_option
+                .nice_select_option
                     form.select_option(action='#')
-                        select(name='orderby' id='short')
+                        select(name='order_by' id='short')
                             option(selected value='1') Sort by average rating
                             option(value='2') Sort by popularity
                             option(value='3') Sort by newness
@@ -64,6 +60,6 @@ include ../../common/mixins
                 +product_area_item('./images/product/product7.jpg', './images/product/product8.jpg')
                 +product_area_item('./images/product/product9.jpg', './images/product/product10.jpg')
                 +product_area_item('./images/product/product11.jpg', './images/product/product12.jpg')
-            .shop_toolbar.t_bottom
+            .shop_toolbar.pagination
                 +pagination
 
