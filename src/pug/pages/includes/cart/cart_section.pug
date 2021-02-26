@@ -1,0 +1,90 @@
+
+section.shop_cart_area
+    .container
+        form(action='#')
+            .table_desc
+                .cart_page
+                    table
+                        thead
+                            tr
+                                th.product_remove Delete
+                                th.product_thumb Image
+                                th.product_name Product
+                                th.product_price Price
+                                th.product_quantity Quantity
+                                th.product_total Total
+                        tbody
+                            tr
+                                td.product_remove
+                                    a(href='#')
+                                        i.fa.fa-trash-o
+                                td.product_thumb
+                                    a(href='#')
+                                        img(src='./images/s-product/product.jpg' alt='')
+                                td.product_name
+                                    a(href='#') Handbag
+                                td.product_price $65.00
+                                td.product_quantity
+                                    label Quantity
+                                    input(min='1' max='100' value='1' type='number')
+                                td.product_total
+                                    a(href='#') $65.00
+                            tr
+                                td.product_remove
+                                    a(href='#')
+                                        i.fa.fa-trash-o
+                                td.product_thumb
+                                    a(href='#')
+                                        img(src='./images/s-product/product.jpg' alt='')
+                                td.product_name
+                                    a(href='#') Handbag
+                                td.product_price $65.00
+                                td.product_quantity
+                                    label Quantity
+                                    input(min='1' max='100' value='1' type='number')
+                                td.product_total
+                                    a(href='#') $65.00
+                            tr
+                                td.product_remove
+                                    a(href='#')
+                                        i.fa.fa-trash-o
+                                td.product_thumb
+                                    a(href='#')
+                                        img(src='./images/s-product/product2.jpg' alt='')
+                                td.product_name
+                                    a(href='#') Handbag
+                                td.product_price $65.00
+                                td.product_quantity
+                                    label Quantity
+                                    input(min='1' max='100' value='1' type='number')
+                                td.product_total
+                                    a(href='#') $65.00
+
+
+                .cart_submit
+                    button(type='submit') update cart
+
+            .coupon_area
+                .coupon_code
+                    h3 Coupon
+                    .coupon_inner
+                        p Enter your coupon code, if you have one.
+                        input(placeholder='Coupon code' type='text')
+                        button(type='submit') Apply coupon
+                .coupon_code
+                    h3 Cart Totals
+                    .coupon_inner
+                        .cart_subtotal
+                            p Subtotal
+                            p.cart_amount $234.00
+                        .cart_subtotal
+                            p Shipping
+                            p.cart_amount
+                                span Flat Rate:
+                                |  $234.00
+                        a(href='#') Calculate shipping
+                        .cart_subtotal
+                            p Total
+                            p.cart_amount $235.00
+                        .checkout_btn
+                            a(href='#') Proceed to Checkout

@@ -86,14 +86,20 @@
       <div class="container">
         <div class="product_details_tab">
           <div class="zoom_wrapper single_zoom"><a href="#"><img src="./images/product/productbig2.jpg" alt=""></a></div>
-          <div class="single_zoom_thumb">
-            <ul>
-              <li><a href="#"><img src="./images/product/productbig3.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./images/product/productbig4.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./images/product/productbig5.jpg" alt=""></a></li>
-              <li><a href="#"><img src="./images/product/productbig6.jpg" alt=""></a></li>
-            </ul>
-          </div>
+          <!--.single_zoom_thumb-->
+          <!--    ul-->
+          <!--        li-->
+          <!--            a(href='#')-->
+          <!--                img(src='./images/product/productbig3.jpg' alt='')-->
+          <!--        li-->
+          <!--            a(href='#')-->
+          <!--                img(src='./images/product/productbig4.jpg' alt='')-->
+          <!--        li-->
+          <!--            a(href='#')-->
+          <!--                img(src='./images/product/productbig5.jpg' alt='')-->
+          <!--        li-->
+          <!--            a(href='#')-->
+          <!--                img(src='./images/product/productbig6.jpg' alt='')-->
         </div>
         <div class="product_details_options">
           <form action="#">
@@ -145,12 +151,12 @@
             </div>
             <div class="product_meta"><span>Category:<a href="#">Clothing</a></span></div>
           </form>
-          <div class="priduct_social">
+          <div class="product_social">
             <ul>
-              <li><a class="facebook" href="#" title="facebook"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#" title="twitter"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="pinterest" href="#" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
-              <li><a class="google-plus" href="#" title="google_plus"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="facebook" href="#" title="facebook"><i class="fa fa-facebook"></i> like</a></li>
+              <li><a class="twitter" href="#" title="twitter"><i class="fa fa-twitter"></i> tweet</a></li>
+              <li><a class="pinterest" href="#" title="pinterest"><i class="fa fa-pinterest"></i> save</a></li>
+              <li><a class="google-plus" href="#" title="google_plus"><i class="fa fa-google-plus"></i> share</a></li>
             </ul>
           </div>
         </div>
@@ -166,7 +172,7 @@
           </ul>
         </div>
         <div class="tab_content">
-          <div class="tab_pane fade show active">
+          <div class="tab_pane fade show active" id="info">
             <div class="product_info_content">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue necest tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare
@@ -183,7 +189,7 @@
               </p>
             </div>
           </div>
-          <div class="tab_pane fade">
+          <div class="tab_pane fade" id="sheet">
             <div class="product_info_content">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue necest tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare
@@ -192,7 +198,7 @@
               </p>
             </div>
           </div>
-          <div class="tab_pane fade">
+          <div class="tab_pane fade" id="reviews">
             <div class="reviews_wrapper">
               <h2>1 reviews for furniture</h2>
               <div class="reviews_comment_box">
@@ -208,7 +214,7 @@
                         <li><a href="#"><i class="ion-ios-star"></i></a></li>
                       </ul>
                     </div>
-                    <p>admin september 22, 2020</p><span>roadthemes</span>
+                    <p><strong>admin </strong>september 22, 2020</p><span>roadthemes</span>
                   </div>
                 </div>
               </div>
@@ -232,13 +238,15 @@
                     <label for="review_comment">Your review</label>
                     <textarea name="comment" id="review_comment"></textarea>
                   </div>
-                  <div class="review_author">
-                    <label for="author">Name</label>
-                    <input id="author" type="text">
-                  </div>
-                  <div class="review_email">
-                    <label for="email">Email</label>
-                    <input id="email" type="text">
+                  <div class="review_contact">
+                    <div class="review_author">
+                      <label for="author">Name</label>
+                      <input id="author" type="text">
+                    </div>
+                    <div class="review_email">
+                      <label for="email">Email</label>
+                      <input id="email" type="text">
+                    </div>
                   </div>
                   <button type="submit">Submit</button>
                 </form>

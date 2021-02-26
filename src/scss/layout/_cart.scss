@@ -1,0 +1,157 @@
+@import "../helpers/variables";
+
+.shop_cart_area {
+    form {
+        width: 100%;
+    }
+}
+
+.cart_submit{
+    text-align: right;
+	padding: 12px;
+    & button{
+        background: $primary_fonts_color;
+        border: 0;
+        color: $background_color;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        height: 38px;
+        line-height: 18px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .3s;
+        border-radius: 3px;
+        &:hover{
+            background: $primary_color;
+        }
+    }
+}
+
+.coupon_inner{
+    padding: 10px 20px 25px;
+    & p{
+        font-size: 13px;
+        margin-bottom: 20px; 
+    }
+    & button{
+        background: $primary_fonts_color;
+        border: 0;
+        color: $background_color;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        height: 38px;
+        line-height: 18px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .3s;
+        border-radius: 3px;
+        &:hover{
+            background:  $primary_color;
+        }
+    }
+    & input{
+        border: 1px solid $border_color_light;
+        height: 42px;
+        background: none;
+        padding: 0 20px;
+        margin-right: 20px;
+        font-size: 12px;
+        color: $primary_fonts_color;
+        @media #{$large-mobile}{
+           margin-bottom: 24px;
+            width: 100%;
+        }
+        @media #{$tablet-device}{
+           margin-bottom: 24px;
+            width: 100%;
+        }
+        
+    }
+    & a{
+        display: block;
+        text-align: right;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $border_color_light;
+        padding-bottom: 10px;
+        border-radius: 3px;
+        &:hover{
+            color: $primary_color;
+        }
+    }
+}
+
+.coupon_code {
+    &.left{
+        @media #{$large-mobile}{
+           margin-bottom: 59px;
+        }
+    }
+	border: 1px solid $border_color_light;
+    & h3{
+        color: $background_color;
+        line-height: 36px;
+        padding: 5px 15px;
+        background: $primary_fonts_color;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        @media #{$large-mobile}{
+           line-height: 28px;
+            padding: 5px 15px;
+            font-size: 15px;
+        }
+    }
+}
+
+.cart_subtotal {
+	display: flex;
+	justify-content: space-between;
+    & p{
+        font-weight: 600;
+        font-size: 14px;
+        &.cart_amount {
+            font-size: 18px;
+	        font-weight: 500;
+             @media #{$large-mobile}{
+                font-size: 14px;
+            }   
+        }
+        & span{
+            margin-right: 30px;
+        }
+    }
+}
+
+.checkout_btn{
+    text-align: right;
+    & a{
+        background: $primary_color;
+        font-size: 15px;
+        padding: 3px 14px;
+        line-height: 30px;
+        font-weight: 500;
+        display: inline-block;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        &:hover{
+            background: $primary_fonts_color;
+            color: $background_color;
+        }
+    }
+}
+.coupon_area{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin-bottom: 60px;
+    & .coupon_code {
+        flex: 1 400px;
+    }
+}

@@ -5,20 +5,20 @@ section.product_details
             .zoom_wrapper.single_zoom
                 a(href='#')
                     img(src='./images/product/productbig2.jpg' alt='')
-            .single_zoom_thumb
-                ul
-                    li
-                        a(href='#')
-                            img(src='./images/product/productbig3.jpg' alt='')
-                    li
-                        a(href='#')
-                            img(src='./images/product/productbig4.jpg' alt='')
-                    li
-                        a(href='#')
-                            img(src='./images/product/productbig5.jpg' alt='')
-                    li
-                        a(href='#')
-                            img(src='./images/product/productbig6.jpg' alt='')
+            //.single_zoom_thumb
+            //    ul
+            //        li
+            //            a(href='#')
+            //                img(src='./images/product/productbig3.jpg' alt='')
+            //        li
+            //            a(href='#')
+            //                img(src='./images/product/productbig4.jpg' alt='')
+            //        li
+            //            a(href='#')
+            //                img(src='./images/product/productbig5.jpg' alt='')
+            //        li
+            //            a(href='#')
+            //                img(src='./images/product/productbig6.jpg' alt='')
 
         .product_details_options
             form(action='#')
@@ -89,25 +89,29 @@ section.product_details
                     span Category:
                         a(href='#') Clothing
 
-            .priduct_social
+            .product_social
                 ul
                     li
                         a.facebook(href='#' title='facebook')
                             i.fa.fa-facebook
+                            |  like
                     li
                         a.twitter(href='#' title='twitter')
                             i.fa.fa-twitter
+                            |  tweet
                     li
                         a.pinterest(href='#' title='pinterest')
                             i.fa.fa-pinterest
+                            |  save
                     li
                         a.google-plus(href='#' title='google_plus')
                             i.fa.fa-google-plus
+                            |  share
 
 section.product_info
     .container
         .product_info_button
-            ul.nav
+            ul.nav()
                 li
                     a.active(href='#info') Description
                 li
@@ -116,7 +120,7 @@ section.product_info
                     a(href='#reviews') Reviews (1)
 
         .tab_content
-            .tab_pane.fade.show.active
+            .tab_pane.fade.show.active(id='info')
                 .product_info_content
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec
                       | est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare
@@ -130,14 +134,14 @@ section.product_info
                       | nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et,
                       | luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget.
 
-            .tab_pane.fade
+            .tab_pane.fade(id='sheet')
                 .product_info_content
                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec
                       | est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare
                       | lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus
                       | eu, suscipit id nulla.
 
-            .tab_pane.fade
+            .tab_pane.fade(id='reviews')
                 .reviews_wrapper
                     h2 1 reviews for furniture
                     .reviews_comment_box
@@ -162,7 +166,9 @@ section.product_info
                                         li
                                             a(href='#')
                                                 i.ion-ios-star
-                                p admin september 22, 2020
+                                p
+                                    strong='admin '
+                                    | september 22, 2020
                                 span roadthemes
                     .comment_title
                         h2 Add a review
@@ -190,10 +196,11 @@ section.product_info
                             .review_comment
                                 label(for='review_comment') Your review
                                 textarea(name='comment' id='review_comment')
-                            .review_author
-                                label(for='author') Name
-                                input(id='author' type='text')
-                            .review_email
-                                label(for='email') Email
-                                input(id='email' type='text')
+                            .review_contact
+                                .review_author
+                                    label(for='author') Name
+                                    input(id='author' type='text')
+                                .review_email
+                                    label(for='email') Email
+                                    input(id='email' type='text')
                             button(type='submit') Submit

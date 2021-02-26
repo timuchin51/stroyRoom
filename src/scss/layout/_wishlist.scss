@@ -1,0 +1,126 @@
+@import "../helpers/variables";
+
+.wishlist_area {
+    padding-bottom: 60px;
+    form {
+        width: 100%;
+    }
+    & .wishlist{
+        & table{
+            & tbody{
+                & tr{
+                    & td{
+                        &.product_total{
+                            & a{
+                                background:  $primary_color;
+                                font-size: 12px;
+                                font-weight: 700;
+                                height: 38px;
+                                line-height: 18px;
+                                padding: 10px 20px;
+                                color: $primary_fonts_color;
+                                text-transform: uppercase;
+                                border-radius: 3px;
+                                &:hover{
+                                    background: $primary_fonts_color;
+                                    color: $background_color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .wishlist table tbody tr:last-child td {
+        border-bottom: 0;
+    }
+}
+
+.table_desc{
+    border: 1px solid $border_color_light;
+    margin-bottom: 60px;
+    & .cart_page{
+        & table{
+            width: 100%;
+            & thead{
+                & tr{
+                    & th{
+                        background: $border_color_dark;
+                        border-bottom: 3px solid $primary_color;
+                        border-right: 1px solid $border_color_light;
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        padding: 10px;
+                        text-align: center;
+                    }
+                }
+            }
+            & tbody{
+                & tr{
+                    & td{
+                        border-bottom: 1px solid $border_color_light;
+                        border-right: 1px solid $border_color_light;
+                        text-align: center;
+                        padding: 10px;
+                        &.product_remove{
+                            min-width: 100px;
+                            & a{
+                                font-size: 20px;
+                                color:  $primary_fonts_color;
+                                &:hover{
+                                    color: $primary_color;
+                                }
+                            }
+                        }
+                        &.product_thumb{
+                            max-width: 180px;
+                            &::before{
+                                display: none;
+                            }
+
+                        }
+                        &.product_name{
+                            min-width: 180px;
+                            & a{
+                                color: $primary_fonts_color;
+                                text-transform: capitalize;
+                                font-size: 14px;
+                                font-weight: 400;
+                                &:hover{
+                                    color: $primary_color;
+                                }
+                            }
+                        }
+
+                        &.product_price{
+                            min-width: 130px;
+                            color: $primary_fonts_color;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                        &.product_quantity{
+                            min-width: 180px;
+                            & label{
+                                font-weight: 600;
+                                margin-right: 5px;
+                            }
+                            & input{
+                                width: 60px;
+                                height: 40px;
+                                padding: 0 5px 0 10px;
+                                background: none;
+                                border: 1px solid $border_color_light;
+                            }
+                        }
+                        & .product_total{
+                            min-width: 120px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
