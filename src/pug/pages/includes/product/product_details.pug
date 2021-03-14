@@ -111,16 +111,16 @@ section.product_details
 section.product_info
     .container
         .product_info_button
-            ul.nav()
+            ul.nav(role='tablist' class='nav_button')
                 li
-                    a.active(href='#info') Description
+                    a.active(href='#info' data-toggle-id='info' role='tab') Description
                 li
-                    a(href='#sheet') Specification
+                    a(href='#sheet' data-toggle-id='sheet' role='tab') Specification
                 li
-                    a(href='#reviews') Reviews (1)
+                    a(href='#reviews' data-toggle-id='reviews' role='tab') Reviews (1)
 
         .tab_content
-            .tab_pane.fade.show.active(id='info')
+            .tab_pane.fade.show(id='info' role='tabpanel')
                 .product_info_content
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec
                       | est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare
@@ -134,14 +134,14 @@ section.product_info
                       | nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et,
                       | luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget.
 
-            .tab_pane.fade(id='sheet')
+            .tab_pane.fade(id='sheet' role='tabpanel')
                 .product_info_content
                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec
                       | est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare
                       | lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus
                       | eu, suscipit id nulla.
 
-            .tab_pane.fade(id='reviews')
+            .tab_pane.fade(id='reviews' role='tabpanel')
                 .reviews_wrapper
                     h2 1 reviews for furniture
                     .reviews_comment_box

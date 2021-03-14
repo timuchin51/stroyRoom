@@ -56,9 +56,6 @@
            margin-bottom: 15px;
             padding-bottom: 18px;
         }
-        //&::before{
-        //    display: none;
-        //}
         & p{
             font-size: 14px;
             line-height: 26px;
@@ -312,7 +309,6 @@
 }
 
 .product_info {
-    margin-bottom: 60px;
     background: $secondary_background_color;
     padding: 60px 0;
     & .container {
@@ -371,6 +367,17 @@
             }
         }
     }
+}
+.tab_content {
+    & .tab_pane {
+        &.fade {
+            display: none;
+        }
+        &.show {
+            display: block;
+        }
+    }
+
 }
 .product_review_form{
     & button{

@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Error page</title>
+    <title>Checkout page</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="css/main.min.css">
@@ -128,17 +128,91 @@
         </div>
       </div>
     </header>
-    <section class="error_section">
+        <div class="breadcrumb">
+          <div class="container">
+            <div class="breadcrumb_content">
+              <ul>
+                <li><a href="index.html">home</a></li>
+                <li>checkout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    <section class="checkout">
       <div class="container">
-        <div class="error_form">
-          <h1>404</h1>
-          <h2>Page not be found</h2>
-          <p>Sorry, but the page you are looking for does not exist
-            <form action="#">
-              <input placeholder="Search" type="text">
-              <button type="submit"><i class="ion-ios-search-strong"></i></button>
-            </form><a href="index.html">Back  to home page</a>
-          </p>
+        <div class="checkout_form">
+          <form action="#">
+            <h3>Billing Details</h3>
+            <div class="first_name">
+              <label>First Name<span>*</span></label>
+              <input type="text">
+            </div>
+            <div class="last_name">
+              <label>Last Name<span>*</span></label>
+              <input type="text">
+            </div>
+            <div class="address">
+              <label>Street address<span>*</span></label>
+              <input placeholder="street name and house number" type="text">
+            </div>
+            <div class="phone">
+              <label>Phone<span>*</span></label>
+              <input type="text">
+            </div>
+            <div class="email">
+              <label>Email address<span>*</span></label>
+              <input type="text">
+            </div>
+            <div class="order_notes">
+              <label for="order_note">Order Notes</label>
+              <textarea id="order_note" placeholder="Note about your order"></textarea>
+            </div>
+          </form>
+          <form action="#">
+            <h3>Your order</h3>
+            <div class="order_table">
+              <table>
+                <thead></thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Total</th>
+                </tr>
+                <tbody>
+                  <tr>
+                    <td>Handbag<strong> x 2</strong></td>
+                    <td>$123.00</td>
+                  </tr>
+                  <tr>
+                    <td>Elit<strong> x 1</strong></td>
+                    <td>$35.00</td>
+                  </tr>
+                  <tr>
+                    <td>Rutrum<strong> x 3</strong></td>
+                    <td>$34.00</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Cart Subtotal</th>
+                    <td>$234.00</td>
+                  </tr>
+                  <tr>
+                    <th>Shipping</th>
+                    <td><strong>$5.00</strong></td>
+                  </tr>
+                  <tr class="order_total">
+                    <th>Order Total</th>
+                    <td><strong>$200.00</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="payment_method">
+              <div class="order_button">
+                <button type="submit">Proceed to Pay</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>

@@ -82,4 +82,60 @@ $(document).ready(function () {
       },
     }
   })
+
+  $(`#main_menu li`).each(function () {
+    const subNav = $(this).find(`.sub_nav`).first()
+    $(this).hover(
+        function () {
+          $(subNav).show()
+        },
+        function () {
+          $(subNav).hide()
+        }
+    )
+  }
+  )
+
+  $(`.sub_nav`).hover(
+      function () {
+        $(this).show()
+      },
+      function () {
+        $(this).hide()
+      }
+  )
+
+
 })
+
+const infoButtons = document.querySelector(`.nav_button`)
+let selectedElem
+
+if (infoButtons) {
+  for (const i of infoButtons.children) {
+    if (i.firstChild.classList.contains(`active`)) {
+      selectedElem = i.firstChild
+    }
+  }
+  infoButtons.onclick = function (event) {
+    const target = event.target
+    const id = event.target.dataset.toggleId
+    if (!id) { return }
+    showTab(id)
+    highlight(target)
+    event.preventDefault()
+  }
+}
+
+function highlight(elem) {
+  selectedElem.classList.remove(`active`)
+  selectedElem = elem
+  selectedElem.classList.add(`active`)
+}
+
+function showTab(id) {
+  const selectedId = selectedElem.dataset.toggleId
+  document.getElementById(selectedId).classList.remove(`show`)
+  const elem = document.getElementById(id)
+  elem.classList.add(`show`)
+}

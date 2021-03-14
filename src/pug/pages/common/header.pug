@@ -1,16 +1,7 @@
+include mixins
 
 header.header
     .header_top
-        .container
-            .welcome
-                p Welcome to out store
-            nav
-                ul
-                    li
-                        a(href='#') Compare (0)
-                    li
-                        a(href='#') Settings
-    .header_middle
         .container
             .logo
                 a(href='index.html')
@@ -26,9 +17,9 @@ header.header
                             li
                                 a(href='#') Pages
                             li
-                                a(href='#') About us
+                                a(href='#') Contact Us
                             li
-                                a(href='#') Contact us
+                                a(href='#') Settings
                 .phone-support
                     .support_icon
                         img(src='./images/icon/icon_phone.png' alt='phone')
@@ -36,7 +27,8 @@ header.header
                         p
                             span Customer Support
                             a(href='tel:+71234567890') +712345678
-    .header_bottom
+
+    .header_middle
         .container
             .categories_menu
                 .categories_title
@@ -55,3 +47,26 @@ header.header
                     a(href='#')
                         span.icon-cart $67.00
                     span.cart_quantity 2
+
+    .header_bottom
+        .container
+            nav.main_nav
+                ul(id='main_menu')
+                    li
+                        a(href='#') Stroy materialy
+                        +sub_nav('item 1', 'item 2', 'item 3', 'item 4')
+                    li
+                        a(href='#') Otdelochny materialy
+                        +sub_nav('item 5', 'item 6', 'item 7', 'item 8')
+                    li
+                        a(href='#') Instruments
+                        +sub_nav('item 9', 'item 10', 'item 11', 'item 12')
+                    li
+                        a(href='#') Electro Instruments
+                        +sub_nav('item 13', 'item 14', 'item 15', 'item 16')
+                    li
+                        a(href='#') Santehnika
+                        +sub_nav('item 17', 'item 18', 'item 19', 'item 20')
+                    li
+                        a(href='#') Electrica
+                        +sub_nav('item 21', 'item 22', 'item 23', 'item 24')

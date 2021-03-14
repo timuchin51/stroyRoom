@@ -1,0 +1,68 @@
+
+section.checkout
+    .container
+        .checkout_form
+            form(action='#')
+                h3 Billing Details
+                .first_name
+                    label First Name
+                        span *
+                    input(type='text')
+                .last_name
+                    label Last Name
+                        span *
+                    input(type='text')
+                .address
+                    label Street address
+                        span *
+                    input(placeholder='street name and house number' type='text')
+                .phone
+                    label Phone
+                        span *
+                    input(type='text')
+                .email
+                    label Email address
+                        span *
+                    input(type='text')
+                .order_notes
+                    label(for='order_note') Order Notes
+                    textarea(id='order_note' placeholder='Note about your order')
+            form(action='#')
+                h3 Your order
+                .order_table
+                    table
+                        thead
+                        tr
+                            th Product
+                            th Total
+                        tbody
+                            tr
+                                td Handbag
+                                    strong
+                                        |  x 2
+                                td $123.00
+                            tr
+                                td Elit
+                                    strong
+                                        |  x 1
+                                td $35.00
+                            tr
+                                td Rutrum
+                                    strong
+                                        |  x 3
+                                td $34.00
+                        tfoot
+                            tr
+                                th Cart Subtotal
+                                td $234.00
+                            tr
+                                th Shipping
+                                td
+                                    strong $5.00
+                            tr.order_total
+                                th Order Total
+                                td
+                                    strong $200.00
+                .payment_method
+                    .order_button
+                        button(type='submit') Proceed to Pay

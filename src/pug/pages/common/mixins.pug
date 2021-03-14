@@ -143,3 +143,10 @@ mixin pagination
                 a(href='#') next
             li
                 a(href='#') >>
+
+mixin sub_nav(...items)
+    .sub_nav
+        ul
+            each item in items
+                li
+                    a(href='#')=item
