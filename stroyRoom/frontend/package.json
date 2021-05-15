@@ -41,6 +41,5 @@
     "stylelint-config-htmlacademy": "^0.1.4",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.19.0"
-  },
-  "dependencies": {}
+  }
 }

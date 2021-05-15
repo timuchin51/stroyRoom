@@ -1,0 +1,134 @@
+{% load static %}
+
+    <header class="header">
+      <div class="header_top">
+        <div class="container">
+          <div class="logo"><a href="{% url 'main:index' %}"><img src="{% static 'main/images/logo/logo.png'%}" alt="logo"></a></div>
+          <div class="main-menu">
+            <div class="menu-items">
+              <nav>
+                <ul>
+                  <li><a href="{% url 'main:index' %}">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Pages</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Settings</a></li>
+                    <li><a href="{% url 'admin:index' %}">admin</a></li>
+                    {% if user.is_authenticated %}
+                  <li><a href="{% url 'main:profile' %}">Profile</a></li>
+                  <li><a href="{% url 'main:logout' %}">Logout</a></li>
+                    {% else %}
+                  <li><a href="{% url 'main:login' %}">Login</a></li>
+                    {% endif %}
+                </ul>
+              </nav>
+            </div>
+            <div class="phone-support">
+              <div class="support_icon"><img src="{% static 'main/images/icon/icon_phone.png' %}" alt="phone"></div>
+              <div class="support_text">
+                <p><span>Customer Support</span><a href="tel:+71234567890">+712345678</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_middle">
+        <div class="container">
+          <div class="categories_menu">
+            <div class="categories_title">
+              <h2>All Categories</h2>
+            </div>
+          </div>
+          <div class="search_container">
+            <form>
+              <div class="search_box">
+                <input type="text" placeholder="Search entire store here...">
+                <button type="submit"></button>
+              </div>
+            </form>
+          </div>
+          <div class="cart_wishlist">
+            <div class="wishlist_btn"><a href="#"><i class="icon-heart"></i></a><span class="wishlist_quantity">3</span></div>
+            <div class="mini_cart"><a href="#"><span class="icon-cart">$67.00</span></a><span class="cart_quantity">2</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container">
+          <nav class="main_nav">
+            <ul id="main_menu">
+              <li><a href="#">Stroy materialy</a>
+                    <div class="sub_nav">
+                      <ul>
+                        <li><a href="#">item 1</a></li>
+                        <li><a href="#">item 2</a></li>
+                        <li><a href="#">item 3</a></li>
+                        <li><a href="#">item 4</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="#">Otdelochny materialy</a>
+                    <div class="sub_nav">
+                      <ul>
+                        <li><a href="#">item 5</a></li>
+                        <li><a href="#">item 6</a></li>
+                        <li><a href="#">item 7</a></li>
+                        <li><a href="#">item 8</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="#">Instruments</a>
+                    <div class="sub_nav">
+                      <ul>
+                        <li><a href="#">item 9</a></li>
+                        <li><a href="#">item 10</a></li>
+                        <li><a href="#">item 11</a></li>
+                        <li><a href="#">item 12</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="#">Electro Instruments</a>
+                    <div class="sub_nav">
+                      <ul>
+                        <li><a href="#">item 13</a></li>
+                        <li><a href="#">item 14</a></li>
+                        <li><a href="#">item 15</a></li>
+                        <li><a href="#">item 16</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="#">Santehnika</a>
+                    <div class="sub_nav">
+                      <ul>
+                        <li><a href="#">item 17</a></li>
+                        <li><a href="#">item 18</a></li>
+                        <li><a href="#">item 19</a></li>
+                        <li><a href="#">item 20</a></li>
+                      </ul>
+                    </div>
+              </li>
+              <li><a href="#">Electrica</a>
+                    <div class="sub_nav">
+                      <ul>
+                        <li><a href="#">item 21</a></li>
+                        <li><a href="#">item 22</a></li>
+                        <li><a href="#">item 23</a></li>
+                        <li><a href="#">item 24</a></li>
+                      </ul>
+                    </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <div class="breadcrumb">
+          <div class="container">
+            <div class="breadcrumb_content">
+              <ul>
+                <li><a href="{% url 'main:index' %}">home</a></li>
+                <li>breadcrumb</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>

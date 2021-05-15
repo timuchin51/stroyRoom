@@ -37,3 +37,8 @@ Pipfile*
 #.stylelintrc.json
 .eslintcache
 #.eslintrc.json
+
+# db files
+*.sqlite3
+
+__pycache__/

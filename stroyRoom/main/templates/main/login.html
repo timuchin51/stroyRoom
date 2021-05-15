@@ -1,0 +1,26 @@
+{% extends "layout/basic.html" %}
+
+{% load static %}
+{% load bootstrap4 %}
+
+{% block title %} Вход {% endblock %}
+
+{% block content %}
+<section class="login">
+      <div class="container">
+        <div class="account_form login">
+          <h2>login</h2>
+          {% if user.is_authentication %}
+            <p>Вход уже выполнен</p>
+          {% else %}
+            <form action="#" method="post">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <input type="hidden" name="next" value="{{ next }}">
+                {% buttons submit='Login' %}{% endbuttons %}
+            </form>
+          {% endif %}
+        </div>
+      </div>
+</section>
+{% endblock %}
