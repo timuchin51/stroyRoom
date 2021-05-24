@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
     'django_extensions',
+    'django_cleanup',
+    'easy_thumbnails',
     'bootstrap4',
 ]
 
@@ -125,3 +127,17 @@ AUTH_USER_MODEL = 'main.UserProfile'
 
 # Always use IPython for shell_plus
 SHELL_PLUS = "ipython"
+
+MEDIA_ROOT = BASE_DIR.joinpath('media')
+MEDIA_URL = '/media/'
+
+# thumbnail settings:
+THUMBNAIL_ALIASES = {
+    '': {
+        'default': {
+            'size': (96, 96),
+            'crop': 'scale',
+        },
+    },
+}
+THUMBNAIL_BASEDIR = 'thumbnails'
